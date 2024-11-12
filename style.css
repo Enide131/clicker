@@ -1,0 +1,80 @@
+/* Общие стили для выравнивания содержимого по центру */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+  }
+  
+  /* Контейнер для кнопок автоклика */
+  .auto-clickers-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    left: 20px;
+    gap: 10px;
+  }
+  
+  /* Контейнер для каждой кнопки автоклика и её счётчика */
+  .auto-clicker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Стиль для каждой кнопки автоклика */
+  .auto-click-button {
+    font-size: 1em;
+    padding: 10px 15px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auto-click-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Стиль для счётчика покупок */
+  .purchase-count {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  /* Стиль для счётчика денег */
+  #moneyCounter {
+    font-size: 3em;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Стиль для основной кнопки Click Me */
+  #clickerButton {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  #clickerButton:hover {
+    background-color: #45a049;
+  }
+  
+  #clickerButton:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+  }
+  
