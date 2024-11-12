@@ -42,6 +42,12 @@ body {
   .auto-click-button:hover {
     background-color: #45a049;
   }
+
+  .auto-click-button:disabled {
+    background-color: #d3d3d3; /* Светло-серый цвет */
+    color: #a0a0a0;  /* Тёмно-серый цвет текста */
+    cursor: not-allowed; /* Курсор "не разрешен" */
+  }
   
   /* Стиль для счётчика покупок */
   .purchase-count {
