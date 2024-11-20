@@ -1,8 +1,20 @@
+ class Upgrade
+ {
+    constructor(cost, increment, interval)
+    {
+      this.cost = cost;
+      this.increment = increment;
+      this.interval = interval;
+      this.label = `Auto Clicker (Cost: ${cost}`;
+      this.count = 0;
+    }
+ }
+ 
  let autoClickers = 
     [
-      { cost: 10, increment: 1, interval: 1000, label: `Auto Clicker (Cost: 10)`, count: 0 },
-      { cost: 50, increment: 20, interval: 4000, label: "Auto Clicker (Cost: 50)", count: 0 },
-      { cost: 100, increment: 90, interval: 10000, label: "Auto Clicker (Cost: 100)", count: 0 },
+      new Upgrade(10, 1, 1000),
+      new Upgrade(50, 4, 4000),
+      new Upgrade(100, 9, 10000)
     ];
     
     export function setupAutoClickers(container, getMoney, setMoney) 
@@ -36,7 +48,7 @@
             clicker.count++;
             clicker.cost = Math.round(clicker.cost * 1.6);
             purchaseCountDisplay.textContent = `Bought: ${clicker.count}`;
-            autoClickButton.textContent = `Auto Clicker (Cost: ${clicker.cost})`;
+            //autoClickButton.textContent = `Auto Clicker (Cost: ${clicker.cost})`;
     
             setInterval(() => 
             {
