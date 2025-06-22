@@ -8,6 +8,7 @@ class Upgrade
       this.click = click;
       this.label = `Auto Clicker (Cost: ${cost})`;
       this.count = 0;
+      this.initialCost = cost;
     }
  }
  
@@ -39,7 +40,8 @@ class Upgrade
           
           autoClickButton.textContent = clicker.label;
           purchaseCountDisplay.textContent = `Bought: ${clicker.count}`;
-          autoClickButton.textContent = `Auto Clicker (Cost: ${clicker.cost})`;
+          if(clicker.click == false)autoClickButton.textContent = `Auto Clicker (Cost: ${clicker.cost})`;
+          else autoClickButton.textContent = `Clicker Bonus (Cost: ${clicker.cost})`;
         }
 
         setInterval(updateButtonStateandInformation, 10);
@@ -67,3 +69,5 @@ class Upgrade
         container.appendChild(autoClickerWrapper);
       });
     } 
+
+    export { autoClickers };

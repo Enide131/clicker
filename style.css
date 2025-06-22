@@ -1,5 +1,4 @@
-/* Общие стили для выравнивания содержимого по центру */
-body {
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,26 +9,23 @@ body {
     background-color: #f0f0f5;
   }
   
-  /* Контейнер для кнопок автоклика */
   .auto-clickers-container {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 10%;
-    left: 20px;
+    top: 20%;
+    left: 40px;
     gap: 10px;
   }
   
-  /* Контейнер для каждой кнопки автоклика и её счётчика */
   .auto-clicker-wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
   }
   
-  /* Стиль для каждой кнопки автоклика */
   .auto-click-button {
-    font-size: 1em;
+    font-size: 2em;
     padding: 10px 15px;
     color: white;
     background-color: #4CAF50;
@@ -44,35 +40,36 @@ body {
   }
 
   .auto-click-button:disabled {
-    background-color: #d3d3d3; /* Светло-серый цвет */
-    color: #a0a0a0;  /* Тёмно-серый цвет текста */
-    cursor: not-allowed; /* Курсор "не разрешен" */
+    background-color: #d3d3d3;
+    color: #a0a0a0;
+    cursor: not-allowed;
   }
   
-  /* Стиль для счётчика покупок */
   .purchase-count {
     font-size: 1em;
     color: #333;
   }
   
-  /* Стиль для счётчика денег */
   #moneyCounter {
     font-size: 3em;
     color: #333;
-    margin-top: 20px;
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    margin: 0;
   }
   
-  /* Стиль для основной кнопки Click Me */
   #clickerButton {
     font-size: 1.5em;
-    padding: 10px 20px;
     color: white;
     background-color: #4CAF50;
     border: none;
-    border-radius: 8px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin-left: 700px;
   }
   
   #clickerButton:hover {
@@ -83,4 +80,19 @@ body {
     background-color: #3e8e41;
     transform: scale(0.98);
   }
+
+  #resetButton {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
   

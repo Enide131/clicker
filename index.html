@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="moneyCounter">0</div>
+
+  <div id="moneyCounter">
+    <span id="moneyLabel">Money:</span>
+    0
+  </div>
   <button id="clickerButton">Click me!</button>
   
-  <!-- Контейнер для кнопок автокликеров -->
-  <div class="auto-clickers-container" id="autoClickersContainer"></div>
+  <div class="tab-panel">
+    <div class="auto-clickers-container" id="autoClickersContainer"></div>
+  </div>
 
-  <script type="module" src="scripts/utils.js"></script>
-  <script type="module" src="scripts/clicker.js"></script>
+  <button id="resetButton">Reset Game</button>
+
   <script type="module" src="scripts/autoClicker.js"></script>
   <script type="module" src="scripts/main.js"></script>
 </body>
